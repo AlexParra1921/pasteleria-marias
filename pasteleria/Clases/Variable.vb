@@ -9,6 +9,7 @@ Module Variable
     ' CLASE ALUMNO'
 
     Public idCliente As Integer
+    Public miIdCliente As Integer
     Public nombre As String
     Public paterno As String
     Public materno As String

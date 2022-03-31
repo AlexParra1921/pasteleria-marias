@@ -23,18 +23,19 @@ Partial Class ConsultarClientes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.BtnBuscar = New System.Windows.Forms.Button()
+        Me.TxtNombre = New System.Windows.Forms.TextBox()
+        Me.TxtPaterno = New System.Windows.Forms.TextBox()
+        Me.TxtMaterno = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnLimpiar = New System.Windows.Forms.Button()
-        Me.BtnAceptar = New System.Windows.Forms.Button()
+        Me.BtnRegresar = New System.Windows.Forms.Button()
+        Me.DGVConsultaCliente = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVConsultaCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -43,53 +44,53 @@ Partial Class ConsultarClientes
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.PaleTurquoise
-        Me.Panel1.Controls.Add(Me.DataGridView1)
-        Me.Panel1.Controls.Add(Me.TextBox3)
-        Me.Panel1.Controls.Add(Me.TextBox2)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.BtnBuscar)
+        Me.Panel1.Controls.Add(Me.TxtNombre)
+        Me.Panel1.Controls.Add(Me.TxtPaterno)
+        Me.Panel1.Controls.Add(Me.TxtMaterno)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Location = New System.Drawing.Point(12, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(656, 482)
+        Me.Panel1.Size = New System.Drawing.Size(722, 277)
         Me.Panel1.TabIndex = 23
         '
-        'DataGridView1
+        'BtnBuscar
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(31, 260)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(592, 193)
-        Me.DataGridView1.TabIndex = 33
+        Me.BtnBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnBuscar.BackColor = System.Drawing.Color.Salmon
+        Me.BtnBuscar.Location = New System.Drawing.Point(580, 233)
+        Me.BtnBuscar.Name = "BtnBuscar"
+        Me.BtnBuscar.Size = New System.Drawing.Size(110, 37)
+        Me.BtnBuscar.TabIndex = 26
+        Me.BtnBuscar.Text = "Buscar"
+        Me.BtnBuscar.UseVisualStyleBackColor = False
         '
-        'TextBox3
+        'TxtNombre
         '
-        Me.TextBox3.Location = New System.Drawing.Point(217, 60)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(377, 32)
-        Me.TextBox3.TabIndex = 32
+        Me.TxtNombre.Location = New System.Drawing.Point(217, 60)
+        Me.TxtNombre.Multiline = True
+        Me.TxtNombre.Name = "TxtNombre"
+        Me.TxtNombre.Size = New System.Drawing.Size(377, 32)
+        Me.TxtNombre.TabIndex = 32
         '
-        'TextBox2
+        'TxtPaterno
         '
-        Me.TextBox2.Location = New System.Drawing.Point(217, 123)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(377, 32)
-        Me.TextBox2.TabIndex = 31
+        Me.TxtPaterno.Location = New System.Drawing.Point(217, 123)
+        Me.TxtPaterno.Multiline = True
+        Me.TxtPaterno.Name = "TxtPaterno"
+        Me.TxtPaterno.Size = New System.Drawing.Size(377, 32)
+        Me.TxtPaterno.TabIndex = 31
         '
-        'TextBox1
+        'TxtMaterno
         '
-        Me.TextBox1.Location = New System.Drawing.Point(217, 184)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(377, 32)
-        Me.TextBox1.TabIndex = 30
+        Me.TxtMaterno.Location = New System.Drawing.Point(217, 184)
+        Me.TxtMaterno.Multiline = True
+        Me.TxtMaterno.Name = "TxtMaterno"
+        Me.TxtMaterno.Size = New System.Drawing.Size(377, 32)
+        Me.TxtMaterno.TabIndex = 30
         '
         'Label8
         '
@@ -138,16 +139,27 @@ Partial Class ConsultarClientes
         Me.BtnLimpiar.Text = "Limpiar"
         Me.BtnLimpiar.UseVisualStyleBackColor = False
         '
-        'BtnAceptar
+        'BtnRegresar
         '
-        Me.BtnAceptar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtnAceptar.BackColor = System.Drawing.Color.Salmon
-        Me.BtnAceptar.Location = New System.Drawing.Point(610, 500)
-        Me.BtnAceptar.Name = "BtnAceptar"
-        Me.BtnAceptar.Size = New System.Drawing.Size(110, 37)
-        Me.BtnAceptar.TabIndex = 25
-        Me.BtnAceptar.Text = "Aceptar"
-        Me.BtnAceptar.UseVisualStyleBackColor = False
+        Me.BtnRegresar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BtnRegresar.BackColor = System.Drawing.Color.Salmon
+        Me.BtnRegresar.Location = New System.Drawing.Point(610, 500)
+        Me.BtnRegresar.Name = "BtnRegresar"
+        Me.BtnRegresar.Size = New System.Drawing.Size(110, 37)
+        Me.BtnRegresar.TabIndex = 25
+        Me.BtnRegresar.Text = "Regresar"
+        Me.BtnRegresar.UseVisualStyleBackColor = False
+        '
+        'DGVConsultaCliente
+        '
+        Me.DGVConsultaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVConsultaCliente.Location = New System.Drawing.Point(34, 286)
+        Me.DGVConsultaCliente.Name = "DGVConsultaCliente"
+        Me.DGVConsultaCliente.RowHeadersWidth = 51
+        Me.DGVConsultaCliente.RowTemplate.Height = 24
+        Me.DGVConsultaCliente.Size = New System.Drawing.Size(643, 186)
+        Me.DGVConsultaCliente.TabIndex = 33
+        Me.DGVConsultaCliente.UseWaitCursor = True
         '
         'ConsultarClientes
         '
@@ -155,7 +167,8 @@ Partial Class ConsultarClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PaleTurquoise
         Me.ClientSize = New System.Drawing.Size(742, 549)
-        Me.Controls.Add(Me.BtnAceptar)
+        Me.Controls.Add(Me.DGVConsultaCliente)
+        Me.Controls.Add(Me.BtnRegresar)
         Me.Controls.Add(Me.BtnLimpiar)
         Me.Controls.Add(Me.Panel1)
         Me.MaximumSize = New System.Drawing.Size(760, 596)
@@ -164,20 +177,21 @@ Partial Class ConsultarClientes
         Me.Text = "ConsultarClientes"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVConsultaCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtNombre As TextBox
+    Friend WithEvents TxtPaterno As TextBox
+    Friend WithEvents TxtMaterno As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnLimpiar As Button
-    Friend WithEvents BtnAceptar As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents BtnRegresar As Button
+    Friend WithEvents DGVConsultaCliente As DataGridView
+    Friend WithEvents BtnBuscar As Button
 End Class

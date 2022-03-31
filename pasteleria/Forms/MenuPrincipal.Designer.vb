@@ -38,17 +38,19 @@ Partial Class MenuPrincipal
         Me.BtnRegCliente = New System.Windows.Forms.Button()
         Me.BtnClientes = New System.Windows.Forms.Button()
         Me.PanelLogo = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelFormHijo = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelLateral.SuspendLayout()
         Me.PanelSubMenuProductos.SuspendLayout()
         Me.PanelSubMenuPedidos.SuspendLayout()
         Me.PanelSubMenuClientes.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
-        Me.PanelSuperior.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelSuperior.SuspendLayout()
+        Me.PanelFormHijo.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelLateral
@@ -260,6 +262,16 @@ Partial Class MenuPrincipal
         Me.PanelLogo.Size = New System.Drawing.Size(229, 128)
         Me.PanelLogo.TabIndex = 0
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.pasteleria.My.Resources.Resources.logoBueno
+        Me.PictureBox1.Location = New System.Drawing.Point(38, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(144, 125)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'PanelSuperior
         '
         Me.PanelSuperior.BackColor = System.Drawing.Color.MistyRose
@@ -284,21 +296,22 @@ Partial Class MenuPrincipal
         'PanelFormHijo
         '
         Me.PanelFormHijo.BackColor = System.Drawing.Color.Plum
+        Me.PanelFormHijo.Controls.Add(Me.Label2)
         Me.PanelFormHijo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFormHijo.Location = New System.Drawing.Point(250, 128)
         Me.PanelFormHijo.Name = "PanelFormHijo"
         Me.PanelFormHijo.Size = New System.Drawing.Size(760, 596)
         Me.PanelFormHijo.TabIndex = 2
         '
-        'PictureBox1
+        'Label2
         '
-        Me.PictureBox1.Image = Global.pasteleria.My.Resources.Resources.logoBueno
-        Me.PictureBox1.Location = New System.Drawing.Point(38, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(144, 125)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(177, 211)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(440, 91)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Bienvenido"
         '
         'MenuPrincipal
         '
@@ -317,9 +330,11 @@ Partial Class MenuPrincipal
         Me.PanelSubMenuPedidos.ResumeLayout(False)
         Me.PanelSubMenuClientes.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelSuperior.ResumeLayout(False)
         Me.PanelSuperior.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelFormHijo.ResumeLayout(False)
+        Me.PanelFormHijo.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -344,4 +359,5 @@ Partial Class MenuPrincipal
     Friend WithEvents BtnRegProduccion As Button
     Friend WithEvents BtnRegProducto As Button
     Friend WithEvents PanelFormHijo As Panel
+    Friend WithEvents Label2 As Label
 End Class

@@ -24,11 +24,11 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.BtnLogin = New System.Windows.Forms.Button()
         Me.TextBoxContrasena = New System.Windows.Forms.TextBox()
         Me.TextBoxUsuario = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -52,17 +52,28 @@ Partial Class Login
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Controls.Add(Me.LinkLabel1)
         Me.Panel2.Controls.Add(Me.BtnLogin)
         Me.Panel2.Controls.Add(Me.TextBoxContrasena)
         Me.Panel2.Controls.Add(Me.TextBoxUsuario)
         Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Location = New System.Drawing.Point(299, 54)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(294, 351)
         Me.Panel2.TabIndex = 2
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LinkLabel1.Location = New System.Drawing.Point(71, 273)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(163, 16)
+        Me.LinkLabel1.TabIndex = 9
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "¿Olvidaste tu Contraseña?"
         '
         'BtnLogin
         '
@@ -80,6 +91,7 @@ Partial Class Login
         Me.TextBoxContrasena.BackColor = System.Drawing.Color.Plum
         Me.TextBoxContrasena.Location = New System.Drawing.Point(74, 221)
         Me.TextBoxContrasena.Name = "TextBoxContrasena"
+        Me.TextBoxContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBoxContrasena.Size = New System.Drawing.Size(151, 22)
         Me.TextBoxContrasena.TabIndex = 7
         '
@@ -99,15 +111,6 @@ Partial Class Login
         Me.Label3.Size = New System.Drawing.Size(76, 16)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Contraseña"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(71, 273)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(163, 16)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "¿Olvidaste tu Contraseña?"
         '
         'Label1
         '
@@ -160,10 +163,10 @@ Partial Class Login
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents BtnLogin As Button
     Friend WithEvents TextBoxContrasena As TextBox
     Friend WithEvents TextBoxUsuario As TextBox
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

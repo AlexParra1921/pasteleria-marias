@@ -9,7 +9,7 @@
 
         Else
             cnx.Close()
-            RegistrarClientes.Show()
+            MenuPrincipal.Show()
             Me.Hide()
 
         End If

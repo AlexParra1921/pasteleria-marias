@@ -1,4 +1,5 @@
 ﻿Imports Oracle.DataAccess.Client
+
 Public Class ClaseLogin
     Private Const V As String = "usuario"
     Private usuario As String
