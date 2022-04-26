@@ -46,13 +46,12 @@
     End Sub
 
     Private Sub BtnConsultaCliente_Click(sender As Object, e As EventArgs) Handles BtnConsultaCliente.Click
-
         abrirFormActual(New ConsultarClientes())
         ocultarSubMenu()
     End Sub
 
     Private Sub BtnRegProducto_Click(sender As Object, e As EventArgs) Handles BtnRegProducto.Click
-        abrirFormActual(New Productos())
+        abrirFormActual(New Producto())
         ocultarSubMenu()
     End Sub
 

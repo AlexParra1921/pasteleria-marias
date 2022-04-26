@@ -24,12 +24,10 @@ Partial Class ConsultarClientes
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BtnBuscar = New System.Windows.Forms.Button()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
         Me.TxtPaterno = New System.Windows.Forms.TextBox()
         Me.TxtMaterno = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BtnLimpiar = New System.Windows.Forms.Button()
         Me.BtnRegresar = New System.Windows.Forms.Button()
@@ -45,40 +43,30 @@ Partial Class ConsultarClientes
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.PaleTurquoise
         Me.Panel1.Controls.Add(Me.BtnBuscar)
-        Me.Panel1.Controls.Add(Me.TxtNombre)
         Me.Panel1.Controls.Add(Me.TxtPaterno)
         Me.Panel1.Controls.Add(Me.TxtMaterno)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(12, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(722, 277)
+        Me.Panel1.Size = New System.Drawing.Size(722, 232)
         Me.Panel1.TabIndex = 23
         '
         'BtnBuscar
         '
         Me.BtnBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.BtnBuscar.BackColor = System.Drawing.Color.Salmon
-        Me.BtnBuscar.Location = New System.Drawing.Point(580, 233)
+        Me.BtnBuscar.Location = New System.Drawing.Point(581, 176)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(110, 37)
         Me.BtnBuscar.TabIndex = 26
         Me.BtnBuscar.Text = "Buscar"
         Me.BtnBuscar.UseVisualStyleBackColor = False
         '
-        'TxtNombre
-        '
-        Me.TxtNombre.Location = New System.Drawing.Point(217, 60)
-        Me.TxtNombre.Multiline = True
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(377, 32)
-        Me.TxtNombre.TabIndex = 32
-        '
         'TxtPaterno
         '
-        Me.TxtPaterno.Location = New System.Drawing.Point(217, 123)
+        Me.TxtPaterno.Location = New System.Drawing.Point(206, 57)
         Me.TxtPaterno.Multiline = True
         Me.TxtPaterno.Name = "TxtPaterno"
         Me.TxtPaterno.Size = New System.Drawing.Size(377, 32)
@@ -86,7 +74,7 @@ Partial Class ConsultarClientes
         '
         'TxtMaterno
         '
-        Me.TxtMaterno.Location = New System.Drawing.Point(217, 184)
+        Me.TxtMaterno.Location = New System.Drawing.Point(206, 126)
         Me.TxtMaterno.Multiline = True
         Me.TxtMaterno.Name = "TxtMaterno"
         Me.TxtMaterno.Size = New System.Drawing.Size(377, 32)
@@ -95,7 +83,7 @@ Partial Class ConsultarClientes
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(54, 191)
+        Me.Label8.Location = New System.Drawing.Point(54, 139)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(115, 16)
         Me.Label8.TabIndex = 26
@@ -104,20 +92,11 @@ Partial Class ConsultarClientes
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(56, 130)
+        Me.Label3.Location = New System.Drawing.Point(54, 64)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(113, 16)
         Me.Label3.TabIndex = 25
         Me.Label3.Text = "Apellido Paterno: "
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(56, 72)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(128, 16)
-        Me.Label4.TabIndex = 24
-        Me.Label4.Text = "Nombre del Cliente: "
         '
         'Label1
         '
@@ -153,11 +132,11 @@ Partial Class ConsultarClientes
         'DGVConsultaCliente
         '
         Me.DGVConsultaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVConsultaCliente.Location = New System.Drawing.Point(34, 286)
+        Me.DGVConsultaCliente.Location = New System.Drawing.Point(34, 257)
         Me.DGVConsultaCliente.Name = "DGVConsultaCliente"
         Me.DGVConsultaCliente.RowHeadersWidth = 51
         Me.DGVConsultaCliente.RowTemplate.Height = 24
-        Me.DGVConsultaCliente.Size = New System.Drawing.Size(643, 186)
+        Me.DGVConsultaCliente.Size = New System.Drawing.Size(643, 215)
         Me.DGVConsultaCliente.TabIndex = 33
         Me.DGVConsultaCliente.UseWaitCursor = True
         '
@@ -183,12 +162,10 @@ Partial Class ConsultarClientes
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents TxtNombre As TextBox
     Friend WithEvents TxtPaterno As TextBox
     Friend WithEvents TxtMaterno As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnLimpiar As Button
     Friend WithEvents BtnRegresar As Button

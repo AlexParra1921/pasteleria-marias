@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class RegistrarClientes
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,12 @@ Partial Class RegistrarClientes
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TxtNumCliente = New System.Windows.Forms.TextBox()
         Me.BtnLimpiar = New System.Windows.Forms.Button()
         Me.BtnAceptar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TxtTelefono = New System.Windows.Forms.TextBox()
-        Me.TxtDomicilio = New System.Windows.Forms.TextBox()
-        Me.TxtCorreo = New System.Windows.Forms.TextBox()
-        Me.TxtNombre = New System.Windows.Forms.TextBox()
-        Me.TxtPaterno = New System.Windows.Forms.TextBox()
-        Me.TxtMaterno = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -40,6 +33,13 @@ Partial Class RegistrarClientes
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.TxtNumCliente = New System.Windows.Forms.TextBox()
+        Me.TxtNombre = New System.Windows.Forms.TextBox()
+        Me.TxtPaterno = New System.Windows.Forms.TextBox()
+        Me.TxtMaterno = New System.Windows.Forms.TextBox()
+        Me.TxtCorreo = New System.Windows.Forms.TextBox()
+        Me.TxtTelefono = New System.Windows.Forms.TextBox()
+        Me.TxtDomicilio = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,14 +51,6 @@ Partial Class RegistrarClientes
         Me.Label2.Size = New System.Drawing.Size(106, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Registrar Cliente"
-        '
-        'TxtNumCliente
-        '
-        Me.TxtNumCliente.Location = New System.Drawing.Point(250, 67)
-        Me.TxtNumCliente.Multiline = True
-        Me.TxtNumCliente.Name = "TxtNumCliente"
-        Me.TxtNumCliente.Size = New System.Drawing.Size(377, 32)
-        Me.TxtNumCliente.TabIndex = 13
         '
         'BtnLimpiar
         '
@@ -88,12 +80,13 @@ Partial Class RegistrarClientes
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.Plum
-        Me.Panel1.Controls.Add(Me.TxtTelefono)
         Me.Panel1.Controls.Add(Me.TxtDomicilio)
+        Me.Panel1.Controls.Add(Me.TxtTelefono)
         Me.Panel1.Controls.Add(Me.TxtCorreo)
-        Me.Panel1.Controls.Add(Me.TxtNombre)
-        Me.Panel1.Controls.Add(Me.TxtPaterno)
         Me.Panel1.Controls.Add(Me.TxtMaterno)
+        Me.Panel1.Controls.Add(Me.TxtPaterno)
+        Me.Panel1.Controls.Add(Me.TxtNombre)
+        Me.Panel1.Controls.Add(Me.TxtNumCliente)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -101,60 +94,11 @@ Partial Class RegistrarClientes
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TxtNumCliente)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(656, 482)
         Me.Panel1.TabIndex = 22
-        '
-        'TxtTelefono
-        '
-        Me.TxtTelefono.Location = New System.Drawing.Point(250, 385)
-        Me.TxtTelefono.Multiline = True
-        Me.TxtTelefono.Name = "TxtTelefono"
-        Me.TxtTelefono.Size = New System.Drawing.Size(377, 32)
-        Me.TxtTelefono.TabIndex = 35
-        '
-        'TxtDomicilio
-        '
-        Me.TxtDomicilio.Location = New System.Drawing.Point(250, 440)
-        Me.TxtDomicilio.Multiline = True
-        Me.TxtDomicilio.Name = "TxtDomicilio"
-        Me.TxtDomicilio.Size = New System.Drawing.Size(377, 32)
-        Me.TxtDomicilio.TabIndex = 34
-        '
-        'TxtCorreo
-        '
-        Me.TxtCorreo.Location = New System.Drawing.Point(250, 321)
-        Me.TxtCorreo.Multiline = True
-        Me.TxtCorreo.Name = "TxtCorreo"
-        Me.TxtCorreo.Size = New System.Drawing.Size(377, 32)
-        Me.TxtCorreo.TabIndex = 33
-        '
-        'TxtNombre
-        '
-        Me.TxtNombre.Location = New System.Drawing.Point(250, 130)
-        Me.TxtNombre.Multiline = True
-        Me.TxtNombre.Name = "TxtNombre"
-        Me.TxtNombre.Size = New System.Drawing.Size(377, 32)
-        Me.TxtNombre.TabIndex = 32
-        '
-        'TxtPaterno
-        '
-        Me.TxtPaterno.Location = New System.Drawing.Point(250, 191)
-        Me.TxtPaterno.Multiline = True
-        Me.TxtPaterno.Name = "TxtPaterno"
-        Me.TxtPaterno.Size = New System.Drawing.Size(377, 32)
-        Me.TxtPaterno.TabIndex = 31
-        '
-        'TxtMaterno
-        '
-        Me.TxtMaterno.Location = New System.Drawing.Point(250, 264)
-        Me.TxtMaterno.Multiline = True
-        Me.TxtMaterno.Name = "TxtMaterno"
-        Me.TxtMaterno.Size = New System.Drawing.Size(377, 32)
-        Me.TxtMaterno.TabIndex = 30
         '
         'Label9
         '
@@ -168,7 +112,7 @@ Partial Class RegistrarClientes
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(102, 388)
+        Me.Label6.Location = New System.Drawing.Point(100, 396)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(67, 16)
         Me.Label6.TabIndex = 28
@@ -219,6 +163,55 @@ Partial Class RegistrarClientes
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "Número de Cliente:"
         '
+        'TxtNumCliente
+        '
+        Me.TxtNumCliente.Location = New System.Drawing.Point(252, 74)
+        Me.TxtNumCliente.Name = "TxtNumCliente"
+        Me.TxtNumCliente.Size = New System.Drawing.Size(377, 22)
+        Me.TxtNumCliente.TabIndex = 36
+        '
+        'TxtNombre
+        '
+        Me.TxtNombre.Location = New System.Drawing.Point(252, 133)
+        Me.TxtNombre.Name = "TxtNombre"
+        Me.TxtNombre.Size = New System.Drawing.Size(377, 22)
+        Me.TxtNombre.TabIndex = 37
+        '
+        'TxtPaterno
+        '
+        Me.TxtPaterno.Location = New System.Drawing.Point(252, 201)
+        Me.TxtPaterno.Name = "TxtPaterno"
+        Me.TxtPaterno.Size = New System.Drawing.Size(377, 22)
+        Me.TxtPaterno.TabIndex = 38
+        '
+        'TxtMaterno
+        '
+        Me.TxtMaterno.Location = New System.Drawing.Point(252, 272)
+        Me.TxtMaterno.Name = "TxtMaterno"
+        Me.TxtMaterno.Size = New System.Drawing.Size(377, 22)
+        Me.TxtMaterno.TabIndex = 39
+        '
+        'TxtCorreo
+        '
+        Me.TxtCorreo.Location = New System.Drawing.Point(252, 337)
+        Me.TxtCorreo.Name = "TxtCorreo"
+        Me.TxtCorreo.Size = New System.Drawing.Size(377, 22)
+        Me.TxtCorreo.TabIndex = 40
+        '
+        'TxtTelefono
+        '
+        Me.TxtTelefono.Location = New System.Drawing.Point(252, 390)
+        Me.TxtTelefono.Name = "TxtTelefono"
+        Me.TxtTelefono.Size = New System.Drawing.Size(377, 22)
+        Me.TxtTelefono.TabIndex = 41
+        '
+        'TxtDomicilio
+        '
+        Me.TxtDomicilio.Location = New System.Drawing.Point(252, 448)
+        Me.TxtDomicilio.Name = "TxtDomicilio"
+        Me.TxtDomicilio.Size = New System.Drawing.Size(377, 22)
+        Me.TxtDomicilio.TabIndex = 42
+        '
         'RegistrarClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -239,7 +232,6 @@ Partial Class RegistrarClientes
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents TxtNumCliente As TextBox
     Friend WithEvents BtnLimpiar As Button
     Friend WithEvents BtnAceptar As Button
     Friend WithEvents Panel1 As Panel
@@ -249,11 +241,12 @@ Partial Class RegistrarClientes
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TxtTelefono As TextBox
-    Friend WithEvents TxtDomicilio As TextBox
-    Friend WithEvents TxtCorreo As TextBox
-    Friend WithEvents TxtNombre As TextBox
-    Friend WithEvents TxtPaterno As TextBox
-    Friend WithEvents TxtMaterno As TextBox
     Friend WithEvents Label9 As Label
+    Friend WithEvents TxtDomicilio As TextBox
+    Friend WithEvents TxtTelefono As TextBox
+    Friend WithEvents TxtCorreo As TextBox
+    Friend WithEvents TxtMaterno As TextBox
+    Friend WithEvents TxtPaterno As TextBox
+    Friend WithEvents TxtNombre As TextBox
+    Friend WithEvents TxtNumCliente As TextBox
 End Class

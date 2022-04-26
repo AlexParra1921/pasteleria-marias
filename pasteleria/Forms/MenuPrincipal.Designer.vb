@@ -324,7 +324,7 @@ Partial Class MenuPrincipal
         Me.MinimumSize = New System.Drawing.Size(1028, 771)
         Me.Name = "MenuPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Clientes"
+        Me.Text = "Menú Principal"
         Me.PanelLateral.ResumeLayout(False)
         Me.PanelSubMenuProductos.ResumeLayout(False)
         Me.PanelSubMenuPedidos.ResumeLayout(False)

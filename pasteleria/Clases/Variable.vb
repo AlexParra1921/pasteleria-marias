@@ -17,4 +17,24 @@ Module Variable
     Public telefono As String
     Public domicilio As String
 
+    'CLASE PRODUCTOS
+    Public idTamano As Integer
+    Public miTamano As Integer
+    Public descTamano As String
+    Public costo As Integer
+    Public cantTamano As Integer
+    Public idProducto As Integer
+    Public miProducto As Integer
+    Public descProd As String
+
+    'CLASE PRODUCCION
+    Public idProdGral As Integer
+    Public idProdEsp As Integer
+    Public fechaProd As String
+    Public cantProd As Integer
+
+    'CLASE USUARIO
+    Public idUsuario As Integer
+    Public miUsuario As Integer
+
 End Module

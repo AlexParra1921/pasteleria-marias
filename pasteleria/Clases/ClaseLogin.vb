@@ -38,6 +38,19 @@ Public Class ClaseLogin
         End Set
     End Property
 
+    Public Function consultaTipoCuenta() As Boolean
+        Dim strSQL As String
+        Dim xCnx As New Oracle
+
+
+        strSQL = "SELECT IDCUENTA FROM USUARIOS WHERE IDCUENTA = 1"
+
+        'consultaTipoCuenta = False
+
+        consultaTipoCuenta = True
+
+    End Function
+
 
 
     Public Function consultaUsuario() As Boolean

@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="Clases\ClaseClientes.vb" />
     <Compile Include="Clases\ClaseLogin.vb" />
+    <Compile Include="Clases\ClaseProduccion.vb" />
     <Compile Include="Clases\ClaseProductos.vb" />
     <Compile Include="Clases\ClaseUsuarios.vb" />
     <Compile Include="Clases\Variable.vb" />
@@ -88,6 +89,12 @@
       <DependentUpon>Agenda.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Agenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AgregarProducto.Designer.vb">
+      <DependentUpon>AgregarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AgregarProducto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ConsultarClientes.Designer.vb">
@@ -100,6 +107,18 @@
       <DependentUpon>ConsultarPedidos.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\ConsultarPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuAdmin.Designer.vb">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Producto.Designer.vb">
+      <DependentUpon>Producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Producto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\RegistrarClientes.Designer.vb">
@@ -134,12 +153,6 @@
     <Compile Include="Forms\Produccion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Productos.Designer.vb">
-      <DependentUpon>Productos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Productos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -161,17 +174,20 @@
     <EmbeddedResource Include="Forms\Agenda.resx">
       <DependentUpon>Agenda.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConsultarClientes.resx">
       <DependentUpon>ConsultarClientes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConsultarPedidos.resx">
       <DependentUpon>ConsultarPedidos.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Producto.resx">
+      <DependentUpon>Producto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegistrarPedidos.resx">
       <DependentUpon>RegistrarPedidos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Productos.resx">
-      <DependentUpon>Productos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegistrarClientes.resx">
       <DependentUpon>RegistrarClientes.vb</DependentUpon>
@@ -203,6 +219,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\logo.png" />
+    <Content Include="images\logoBueno.png" />
+    <Content Include="images\pasteleriaImg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

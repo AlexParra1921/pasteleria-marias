@@ -106,7 +106,7 @@ Public Class ClaseClientes
         '"INSERT INTO Ciudades VALUES(" & idPais & ", " & idEstado & ", " & idCiudad & ", '" & nombre & "')"
         ' ----------------------------------------------------------------------------------------------------------
 
-        strSql = "INSERT INTO CLIENTES VALUES(" & idCliente & ", '" & nombre & "', '" & paterno & "', '" & materno & "', '" & correo & "', '" & telefono & "', '" & domicilio & "')"
+        strSql = "INSERT INTO CLIENTES VALUES(usuarioSeq.NEXTVAL" & ", '" & nombre & "', '" & paterno & "', '" & materno & "', '" & correo & "', '" & telefono & "', '" & domicilio & "')"
 
 
         xCnx.objetoCommand(strSql)
@@ -159,8 +159,7 @@ Public Class ClaseClientes
 
         strSQL = "SELECT IDCLIENTE " &
                  " FROM CLIENTES " &
-                 " WHERE NOMBRE ='" & ConsultarClientes.TxtNombre.Text & "' AND " &
-                    " PATERNO ='" & ConsultarClientes.TxtPaterno.Text & "' AND " &
+                 " WHERE PATERNO ='" & ConsultarClientes.TxtPaterno.Text & "' AND " &
                     " MATERNO = '" & ConsultarClientes.TxtMaterno.Text & "'"
         consultaNumCliente = False
         xDT = xCnx.objetoDataAdapter(strSQL)
@@ -225,10 +224,11 @@ Public Class ClaseClientes
         ' el simbolo & se usa para continuar la línea, y los valores en éste caso son las variables o las
         ' cajas de texto del formulario VARCHAR y DATE se esciben entre apostrofes
 
-        strSQL = " SELECT IDCLIENTE AS NumCliente, CORREO AS Correo, TELEFONO AS Telefono, DOMICILIO AS Domicilio " &
-                 " FROM CLIENTES " &
-                 " ORDER BY IDCLIENTE asc"
+        strSQL = " SELECT NOMBRE AS Nombre, PATERNO AS Apellido_Paterno, MATERNO AS Apellido_Materno, CORREO AS Correo, TELEFONO AS Telefono, DOMICILIO AS Domicilio FROM CLIENTES" &
+                  " ORDER BY IDCLIENTE asc"
         '" WHERE NOMBRE = '" & ConsultarClientes.TxtNombre.Text & "'" &
+        '" ORDER BY IDCLIENTE asc"
+
         ' " ORDER BY IDCLIENTE asc"
         ' " PATERNO ='" & ConsultarClientes.TxtPaterno.Text & "' AND " &
         '" MATERNO = '" & ConsultarClientes.TxtMaterno.Text & "'" &

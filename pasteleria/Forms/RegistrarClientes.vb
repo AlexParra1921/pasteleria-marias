@@ -32,7 +32,7 @@
 
             Dim cliente As New ClaseClientes(idCliente, TxtNombre.Text, TxtPaterno.Text, TxtMaterno.Text,
                                          TxtCorreo.Text, TxtTelefono.Text, TxtDomicilio.Text)
-            cliente.getSetnumCliente = TxtNumCliente.Text
+            'cliente.getSetnumCliente = TxtNumCliente.Text
             cliente.getSetNombre = TxtNombre.Text
             cliente.getSetPaterno = TxtPaterno.Text
             cliente.getSetMaterno = TxtMaterno.Text
